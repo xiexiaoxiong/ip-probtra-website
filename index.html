@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP-Probtra - 专利侵权分析 AI 全流程自动化</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                    </svg>
+                </div>
+                <span class="logo-text">IP-Probtra</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">核心功能</a>
+                <a href="#workflow" class="nav-link">分析流程</a>
+                <a href="#demo" class="nav-link">系统演示</a>
+                <a href="javascript:void(0)" class="nav-btn consult-btn">马上咨询</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Image 11) -->
+    <section class="hero" id="hero">
+        <div class="grid-bg"></div>
+        <div class="glow-orb glow-orb-1"></div>
+        <div class="glow-orb glow-orb-2"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>智能专利分析 · IP-PROBTRA 平台</span>
+            </div>
+            <h1 class="hero-title">
+                专利侵权分析<br>
+                <span class="gradient-text">AI全流程自动化</span>
+            </h1>
+            <p class="hero-desc">
+                输入一件专利，自动完成权利要求解构、全网电商检索、侵权比对与报告生成，<br>
+                将原本耗时数周的分析压缩至分钟级完成。
+            </p>
+            <div class="hero-actions">
+                <a href="javascript:void(0)" class="btn btn-primary consult-btn">马上咨询</a>
+                <a href="#workflow" class="btn btn-outline">了解流程</a>
+            </div>
+            <div class="hero-steps">
+                <div class="step-card">
+                    <span class="step-label">STEP 01</span>
+                    <div class="step-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                        </svg>
+                    </div>
+                    <span class="step-text">输入专利号</span>
+                </div>
+                <span class="step-arrow">→</span>
+                <div class="step-card">
+                    <span class="step-label">STEP 02</span>
+                    <div class="step-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <span class="step-text">AI解构权利要求</span>
+                </div>
+                <span class="step-arrow">→</span>
+                <div class="step-card">
+                    <span class="step-label">STEP 03</span>
+                    <div class="step-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                        </svg>
+                    </div>
+                    <span class="step-text">电商全网检索</span>
+                </div>
+                <span class="step-arrow">→</span>
+                <div class="step-card">
+                    <span class="step-label">STEP 04</span>
+                    <div class="step-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><path d="M12 9v4M12 17h.01"/>
+                        </svg>
+                    </div>
+                    <span class="step-text">侵权比对分析</span>
+                </div>
+                <span class="step-arrow">→</span>
+                <div class="step-card">
+                    <span class="step-label">STEP 05</span>
+                    <div class="step-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 6L9 17l-5-5"/>
+                        </svg>
+                    </div>
+                    <span class="step-text">生成侵权报告</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Image 12) -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">核心功能</span>
+                <h2 class="section-title">专为专利维权<br>而生的 AI 引擎</h2>
+                <p class="section-desc">从专利文本理解到电商商品侵权判断，全链路 AI 自动化，无需人工逐一排查。</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-delay="0">
+                    <div class="feature-icon feature-icon-blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">专利权利要求智能解构</h3>
+                    <p class="feature-desc">自动解析专利全文，精确提取独立权利要求与从属权利要求中的技术特征，构建结构化特征树，为比对奠定基础。</p>
+                </div>
+                <div class="feature-card" data-delay="100">
+                    <div class="feature-icon feature-icon-blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">电商平台全网检索</h3>
+                    <p class="feature-desc">覆盖淘宝、京东、拼多多、亚马逊、速卖通等主流电商平台，基于技术特征关键词自动生成检索策略并抓取商品数据。</p>
+                </div>
+                <div class="feature-card" data-delay="200">
+                    <div class="feature-icon feature-icon-blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">全要素覆盖比对</h3>
+                    <p class="feature-desc">运用大模型推理引擎，对商品说明书、图片、参数进行分析，逐一比对权利要求中每项技术特征，精准判断是否满足全要素覆盖原则。</p>
+                </div>
+                <div class="feature-card" data-delay="300">
+                    <div class="feature-icon feature-icon-green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">结构化侵权报告输出</h3>
+                    <p class="feature-desc">自动生成包含侵权商品清单、侵权分析比对表、证据链截图存档的专业报告，可直接用于维权诉讼材料准备。</p>
+                </div>
+                <div class="feature-card" data-delay="400">
+                    <div class="feature-icon feature-icon-green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8M12 17v4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">FTO 分析</h3>
+                    <p class="feature-desc">基于独家产品特征提取技术，后续推出FTO分析，用户输入产品照片后系统自动检索专利并进行分析。</p>
+                </div>
+                <div class="feature-card" data-delay="500">
+                    <div class="feature-icon feature-icon-green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">MaaS 弹性扩展</h3>
+                    <p class="feature-desc">基于 Model as a Service 架构，后续推出支持多专利批量并发分析，企业可按需调用 API 集成至自有业务系统，灵活扩展。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section (Image 13) -->
+    <section class="workflow" id="workflow">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">分析流程</span>
+                <h2 class="section-title">四步完成<br>全链路侵权分析</h2>
+            </div>
+            <div class="workflow-steps">
+                <div class="workflow-step" data-delay="0">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>专利输入</h3>
+                        <p>输入专利号或上传专利文本，系统自动抓取 CNIPA / USPTO 官方全文数据</p>
+                    </div>
+                </div>
+                <div class="workflow-connector"></div>
+                <div class="workflow-step" data-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>要素分解</h3>
+                        <p>AI 大模型深度解析权利要求，提取技术特征、功能描述与限定条件，构建比对图谱</p>
+                    </div>
+                </div>
+                <div class="workflow-connector"></div>
+                <div class="workflow-step" data-delay="400">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>商品检索比对</h3>
+                        <p>跨平台抓取商品数据，结合图像识别与文本分析，对每件商品逐要素比对判断</p>
+                    </div>
+                </div>
+                <div class="workflow-connector"></div>
+                <div class="workflow-step" data-delay="600">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>报告生成</h3>
+                        <p>输出专业侵权分析报告，包含侵权清单、比对详情、截图证据，支持 PDF / Word 导出</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section (Image 14) -->
+    <section class="demo" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">系统演示</span>
+                <h2 class="section-title">分钟级完成<br>过去需要数周的工作</h2>
+            </div>
+            <div class="demo-content">
+                <div class="demo-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="terminal-title">IP-Probtra · 分析引擎</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">analyze --patent CN201810123456 --market all</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="indicator pending">▶</span>
+                            <span class="text">正在获取专利全文...</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="indicator success">✓</span>
+                            <span class="text success">专利 CN201810123456 加载完成（共 23 项权利要求）</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="indicator pending">▶</span>
+                            <span class="text">AI 解构权利要求特征树...</span>
+                        </div>
+                        <div class="terminal-line indent">
+                            <span class="highlight">独权1: [连接机构] [弹性复位件] [旋转轴] [锁定结构]</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="indicator success">✓</span>
+                            <span class="text success">提取 47 个技术特征节点</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="indicator pending">▶</span>
+                            <span class="text">启动电商平台检索...</span>
+                        </div>
+                        <div class="terminal-line indent">
+                            <span class="highlight">淘宝: 2,847 件 京东: 1,203 件 拼多多: 4,521 件</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="indicator pending">▶</span>
+                            <span class="text">全要素覆盖比对（8,571 件商品）...</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="indicator warning"></span>
+                            <span class="text warning">疑似侵权商品: 143 件（置信度 ≥ 85%）</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="indicator success">✓</span>
+                            <span class="text success">报告生成完毕 → report_CN201810123456.pdf</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="cursor"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-info">
+                    <h3 class="demo-info-title">一个专利号<br>全网侵权一目了然</h3>
+                    <p class="demo-info-desc">IP-Probtra 将传统专利律师事务所需要数周完成的侵权排查工作，通过 AI 自动化压缩到分钟级，大幅降低维权成本。</p>
+                    <ul class="demo-benefits">
+                        <li>支持中国、美国、欧洲专利局数据直连，无需手动下载专利文件</li>
+                        <li>覆盖国内外主流电商平台，跨境侵权一次检索全覆盖</li>
+                        <li>每件商品出具独立的权利要求比对分析，证据链完整</li>
+                        <li>报告可直接作为律师诉讼材料或平台投诉附件</li>
+                        <li>支持企业 API 集成，专利管理系统无缝接入</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats & CTA Section (Image 15) -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="98" data-suffix="%">0%</span>
+                    <span class="stat-label">特征比对准确率</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10" data-suffix="+">0+</span>
+                    <span class="stat-label">覆盖主流电商平台</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="30" data-suffix="min">0min</span>
+                    <span class="stat-label">平均分析完成时间</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="95" data-suffix="%">0%</span>
+                    <span class="stat-label">单专利分析费用下降</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="cta-glow"></div>
+        <div class="container">
+            <div class="cta-content">
+                <span class="section-tag">立即开始</span>
+                <h2 class="cta-title">让 AI 替你找出<br><span class="gradient-text">每一件侵权产品</span></h2>
+                <p class="cta-desc">无论您是专利权人、律师事务所还是企业知产部门，IP-Probtra 都能为您提供专业、高效的侵权分析服务。</p>
+                <a href="javascript:void(0)" class="btn btn-primary btn-large consult-btn">马上咨询</a>
+                <p class="cta-note">专业团队将在 24 小时内与您取得联系 · 提供免费演示</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            </svg>
+                        </div>
+                        <span class="logo-text">IP-Probtra</span>
+                    </div>
+                    <p>AI 驱动的专利侵权分析平台</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>产品</h4>
+                        <a href="#features">核心功能</a>
+                        <a href="#workflow">分析流程</a>
+                        <a href="#demo">系统演示</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>支持</h4>
+                        <a href="#">帮助中心</a>
+                        <a href="#">API 文档</a>
+                        <a href="#">联系我们</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 IP-Probtra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Consult Modal -->
+    <div class="modal-overlay" id="consultModal">
+        <div class="modal">
+            <button class="modal-close" aria-label="关闭">&times;</button>
+            <div class="modal-header">
+                <h3>预约咨询</h3>
+                <p>留下您的联系方式，专业团队将在 24 小时内与您取得联系</p>
+            </div>
+            <form id="consultForm" class="modal-form">
+                <div class="form-group">
+                    <label for="userEmail">邮箱地址</label>
+                    <input type="email" id="userEmail" name="user_email" placeholder="请输入您的邮箱" required>
+                </div>
+                <div class="form-group">
+                    <label for="userPhone">联系电话</label>
+                    <input type="tel" id="userPhone" name="user_phone" placeholder="请输入您的手机号" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full" id="submitBtn">提交咨询</button>
+            </form>
+            <div class="modal-success" id="modalSuccess">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M20 6L9 17l-5-5"/>
+                </svg>
+                <h3>提交成功！</h3>
+                <p>我们已收到您的咨询请求，将尽快与您联系。</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
