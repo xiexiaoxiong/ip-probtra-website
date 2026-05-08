@@ -82,6 +82,12 @@ body {
     height: 72px;
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -147,6 +153,11 @@ body {
 .nav-btn:hover {
     transform: translateY(-1px);
     box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
+}
+
+.nav-login-btn {
+    margin-left: 0;
+    white-space: nowrap;
 }
 
 .mobile-menu-btn {
@@ -893,6 +904,15 @@ body {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
+    }
+
+    .nav-actions {
+        gap: 8px;
+    }
+
+    .nav-login-btn {
+        padding: 10px 16px;
+        font-size: 13px;
     }
 
     .mobile-menu-btn {
