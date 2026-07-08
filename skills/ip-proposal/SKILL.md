@@ -1,13 +1,13 @@
 ---
-name: ip-high-damages-selector
-description: Select the best high-damages PRC IP litigation path from trademark, unfair competition, patent, and copyright foundations through investigation-driven assessment. Use when the user provides or wants to assess a right holder, infringement link/store/product/content, suspected infringer, platform, or evidence clues and needs active public-search targets, sales/scale investigation, optimal rights basis, jurisdiction court, defendants, claim amount, evidence strategy, defendant defenses, and supporting reasons.
+name: ip-proposal
+description: Generate a plaintiff-side PRC IP litigation proposal report from a right holder, infringement link/store/product/content, suspected infringer, platform, or evidence clues. Use when the user needs investigation-driven rights inventory, packaging/expression comparison, trademark/unfair competition/patent/copyright path selection, high-damages feasibility, jurisdiction, defendants, claim amount, evidence strategy, defendant defenses, and a human-readable DOCX proposal.
 ---
 
-# IP High Damages Selector
+# IP-Proposal
 
 ## Overview
 
-Use this skill to convert sparse infringement clues into a plaintiff-side high-damages litigation route. The skill compares four rights bases: trademark, unfair competition, patent, and copyright.
+Use this skill to convert sparse infringement clues into a plaintiff-side IP litigation proposal. The skill compares four rights bases: trademark, unfair competition, patent, and copyright.
 
 The output must not merely list options. It must recommend a **primary path**, identify **backup paths**, and explain why other paths are weaker.
 

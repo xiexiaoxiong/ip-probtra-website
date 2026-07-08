@@ -1,4 +1,0 @@
-interface:
-  display_name: "IP High Damages Selector"
-  short_description: "Investigate and select high-damages IP litigation paths"
-  default_prompt: "Use $ip-high-damages-selector to access blocked platform pages where possible, investigate public clues, sales scale, rights, defendants, jurisdiction, and choose the best high-damages IP litigation path."

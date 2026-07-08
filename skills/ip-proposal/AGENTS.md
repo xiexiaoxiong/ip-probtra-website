@@ -1,10 +1,18 @@
-# Agent Invocation Contract
+# IP-Proposal Agent Contract
 
 Use this file when an agent cannot automatically discover Codex-style skills.
 
+## Display Name
+
+Human-facing name: `IP-Proposal`
+
+Codex/agent invocation name: `$ip-proposal`
+
+Skill folder: `ip-proposal`
+
 ## Trigger
 
-Invoke this skill when the user provides any of the following and asks for IP litigation path selection, high damages feasibility, infringement assessment, evidence plan, jurisdiction, defendants, or a DOCX report:
+Invoke this skill when the user provides any of the following and asks for IP infringement assessment, litigation proposal, high-damages feasibility, evidence plan, jurisdiction, defendants, or a DOCX report:
 
 - right holder, brand, product, copyrighted work, patent, trademark, or company;
 - infringement link, store, platform account, product page, app, listing, content page, or screenshots;
@@ -30,14 +38,24 @@ If the user gives only `权利人 + 侵权链接`, proceed. Extract all availabl
 
 ## Non-Skippable Steps
 
-1. Search the right holder's trademarks, patents, and copyright assets.
-2. Search the accused side's trademarks, patents, and copyright assets.
+1. Search the right holder's trademarks, patents, copyright assets, and packaging/trade dress or expression basis.
+2. Search the accused side's trademarks, patents, copyright assets, and operating entities.
 3. Access or preserve the accused page using the access ladder.
 4. Compare packaging / product appearance / expressive content when relevant.
 5. Score trademark, unfair competition, patent, and copyright paths.
 6. Choose one primary path and backup paths.
 7. Build jurisdiction, defendant, damages, evidence, and defense strategy.
-8. Generate a human-readable `.docx` report for full assessments.
+8. Generate a human-readable `.docx` litigation proposal for full assessments.
+
+## Other-Agent Installation
+
+For OpenClaw or another non-Codex agent:
+
+1. Copy this folder to the agent's skill/prompt directory.
+2. Configure `$ip-proposal` as an alias for reading `SKILL.md` and following the required references.
+3. Grant browser/search access for live links and public rights/company/court sources.
+4. Grant local file output access for `.docx` reports.
+5. Require the agent to record blocked pages and ask for lawful login/notarization support instead of bypassing CAPTCHA or platform risk controls.
 
 ## Final Response
 

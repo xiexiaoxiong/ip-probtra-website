@@ -4,22 +4,22 @@ This repository includes reusable agent skills for plaintiff-side PRC IP litigat
 
 ## Available Skill
 
-- [`ip-high-damages-selector`](skills/ip-high-damages-selector/README.md): investigate a right holder and suspected infringement target, compare trademark / unfair competition / patent / copyright paths, and generate a human-readable `.docx` high-damages litigation route report.
+- [`IP-Proposal`](skills/ip-proposal/README.md): investigate a right holder and suspected infringement target, compare trademark / unfair competition / patent / copyright paths, and generate a human-readable `.docx` litigation proposal report.
 
 ## Quick Use
 
 For Codex-compatible agents, copy the skill folder into the agent's skill directory:
 
 ```bash
-cp -R skills/ip-high-damages-selector ~/.codex/skills/
+cp -R skills/ip-proposal ~/.codex/skills/
 ```
 
 Then invoke:
 
 ```text
-Use $ip-high-damages-selector.
+Use $ip-proposal.
 权利人：某品牌/某公司
 侵权链接：https://example.com/item/123
 ```
 
-For OpenClaw or other agents without native Codex skill discovery, read [`AGENTS.md`](skills/ip-high-damages-selector/AGENTS.md) and load [`SKILL.md`](skills/ip-high-damages-selector/SKILL.md) plus the referenced files under `references/`.
+For OpenClaw or other agents without native Codex skill discovery, read [`AGENTS.md`](skills/ip-proposal/AGENTS.md) and load [`SKILL.md`](skills/ip-proposal/SKILL.md) plus the referenced files under `references/`.
