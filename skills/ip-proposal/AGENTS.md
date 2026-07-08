@@ -49,7 +49,19 @@ If the user gives only `权利人 + 侵权链接`, proceed. Extract all availabl
 
 ## Other-Agent Installation
 
-For OpenClaw or another non-Codex agent:
+For OpenClaw or another non-Codex agent, the user should be able to paste this prompt and let the target agent install itself:
+
+```text
+请帮我安装 IP-Proposal skill。
+GitHub 地址：https://github.com/xiexiaoxiong/ip-probtra-website/tree/main/skills/ip-proposal
+
+请你自行完成安装：
+1. 如果你支持 Codex/OpenAI 风格的 skill，请把该目录安装为 ip-proposal，并确保我可以用 $ip-proposal 调用；
+2. 如果你不支持这种 skill 机制，请把 SKILL.md 和 references/ 作为你的提示词包/知识包，并配置 $ip-proposal 别名；
+3. 安装后告诉我具体调用方式，并用一句话确认你会在完整评估时生成 DOCX 诉讼方案报告。
+```
+
+Manual fallback:
 
 1. Copy this folder to the agent's skill/prompt directory.
 2. Configure `$ip-proposal` as an alias for reading `SKILL.md` and following the required references.
@@ -60,4 +72,3 @@ For OpenClaw or another non-Codex agent:
 ## Final Response
 
 Return a short delivery note with the report path. Do not paste the whole report into chat unless the user asks for chat-only output.
-
